@@ -24,7 +24,8 @@ _ICYAN=$'\033[46m
 _IWHITE=$'\033[47m
 
 SRC = \
-	main.cpp \
+	src/main.cpp \
+	src/Harl.cpp \
 
 INCLUDES = \
 	-I./include/ \
@@ -33,7 +34,7 @@ OBJ = $(SRC:%.cpp=$(BUILD_DIR)%.o)
 BUILD_DIR = ./build/
 CC = g++
 CFLAGS = -Wall -Wextra -Werror -g -std=c++98
-NAME = loser_is_for_losers
+NAME = Harl_2.0
 BOOL_EXEC = 0
 EXEC = ./$(NAME)
 IS_COMPILING = 0
@@ -80,4 +81,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re valgrind
-
