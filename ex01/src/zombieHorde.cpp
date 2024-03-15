@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 19:32:07 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/04 20:19:04 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/03/15 16:37:56 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ Zombie	*zombieHorde(int N, std::string name)
 	for (int i = 0; i < N; i++)
 	{
 		zombie[i].setName(name);
-		zombie[i].announce();
 	}
-	delete [] zombie;
 	return (zombie);
 }

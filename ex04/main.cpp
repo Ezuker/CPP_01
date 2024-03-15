@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/05 15:16:36 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/03/15 16:59:18 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,12 @@ std::string	ifsContentTransform(std::string ifsContent, std::string needle, std:
 	newIfsContent += ifsContent.substr(pos, ifsContent.length() - pos);
 	return (newIfsContent);
 }
+
 int	main (int argc, char *argv[])
 {
 	if (argc != 4)
 	{
-		std::cout << "Wrong number of args" << std::endl;
+		std::cerr << "Wrong number of args" << std::endl;
 		return (1);
 	}
 	std::string	s1;
@@ -51,6 +52,11 @@ int	main (int argc, char *argv[])
 	s2 = argv[3];
 
 	std::ifstream	ifs(argv[1]);
+	if (!ifs)
+	{
+		std::cerr << "Wrong path" << std::endl;
+		return (1);
+	}
 	std::ofstream	ofs(strcat(argv[1], ".replace"));
 	
 	std::string	ifsContent;
@@ -62,6 +68,7 @@ int	main (int argc, char *argv[])
 			std::string	tmp;
 			std::getline(ifs, tmp);
 			ifsContent += tmp;
+			ifsContent += '\n';
 		}
 	}
 	ifsContent = ifsContentTransform(ifsContent, s1, s2);

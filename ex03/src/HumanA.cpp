@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 20:41:23 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/05 00:36:02 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/03/15 16:48:52 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ Weapon	&HumanA::getWeapon()
 }
 void	HumanA::attack()
 {
-	std::cout << this->_name << " attacks with their " << getWeapon().getType() << std::endl;
+	std::cout << this->_name << " attacks with their " << this->_weapon.getType() << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 20:24:38 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/04 20:28:15 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/03/15 16:43:48 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ int	main()
 	std::string &stringREF = string;
 
 	std::cout << &string << std::endl;
-	std::cout << &stringPTR << std::endl;
+	std::cout << stringPTR << std::endl;
 	std::cout << &stringREF << std::endl;
 
 	std::cout << string << std::endl;
-	std::cout << stringPTR << std::endl;
+	std::cout << *stringPTR << std::endl;
 	std::cout << stringREF << std::endl;
 }

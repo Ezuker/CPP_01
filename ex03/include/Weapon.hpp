@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 20:41:27 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/05 00:01:35 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/03/15 16:45:48 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class Weapon
 		Weapon(std::string type);
 		~Weapon();
 
-		std::string	getType();
-		void		setType(std::string type);
+		const std::string	&getType();
+		void				setType(std::string type);
 
 	private:
 		std::string _type;
