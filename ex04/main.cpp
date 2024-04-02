@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/15 16:59:18 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/02 22:52:08 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,11 @@ int	main (int argc, char *argv[])
 		{
 			std::string	tmp;
 			std::getline(ifs, tmp);
-			ifsContent += tmp;
-			ifsContent += '\n';
+			if (tmp.length() > 0)
+			{
+				ifsContent += tmp;
+				ifsContent += '\n';
+			}
 		}
 	}
 	ifsContent = ifsContentTransform(ifsContent, s1, s2);

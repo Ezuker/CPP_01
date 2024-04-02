@@ -55,9 +55,6 @@ $(NAME): $(OBJ)
 		$(EXEC); \
 	fi
 
-valgrind: $(NAME)
-	@valgrind --tool=helgrind $(EXEC) 5 800 200 200 7
-
 $(BUILD_DIR)%.o: %.cpp
 	@ \
 	if [ $(IS_COMPILING) -eq 0 ]; then \

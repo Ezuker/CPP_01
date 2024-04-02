@@ -6,13 +6,17 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 19:17:35 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/04 20:17:21 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/02 22:30:29 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 Zombie::Zombie ()
+{
+}
+
+Zombie::Zombie (std::string name) : _name(name)
 {
 }
 
