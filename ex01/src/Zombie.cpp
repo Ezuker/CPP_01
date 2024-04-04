@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 19:17:35 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/02 22:30:29 by bcarolle         ###   ########.fr       */
+/*   Created: 2024/04/04 11:49:20 by bcarolle          #+#    #+#             */
+/*   Updated: 2024/04/04 11:49:21 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-
-Zombie::Zombie ()
+Zombie::Zombie () : _name("")
 {
 }
 
@@ -37,5 +35,8 @@ std::string	Zombie::getName ()
 
 void	Zombie::announce (void)
 {
-	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	if (this->_name == "")
+		std::cout << "Zombie: BraiiiiiiinnnzzzZ..." << std::endl;
+	else
+		std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

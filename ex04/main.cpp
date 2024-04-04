@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/02 22:52:08 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/04 12:01:20 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,13 @@ int	main (int argc, char *argv[])
 		return (1);
 	}
 	std::ofstream	ofs(strcat(argv[1], ".replace"));
+	if (!ofs)
+	{
+		std::cerr << "Can't create / access to outfile" << std::endl;
+		return (1);
+	}
 	
 	std::string	ifsContent;
-
 	if (ifs.is_open())
 	{
 		while (ifs)

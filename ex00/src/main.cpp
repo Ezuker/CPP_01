@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 19:36:22 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/15 16:34:36 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/04 11:50:33 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int main()
 
 	randomChump("jim");
 	bob.announce();
-	topheur->announce();
 	delete topheur;
 	return (0);
 }

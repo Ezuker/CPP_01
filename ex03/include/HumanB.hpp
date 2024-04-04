@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 00:01:49 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/15 16:52:06 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/04 11:59:16 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ class HumanB
 		~HumanB();
 
 		void		attack();
-		void		setWeapon(Weapon &weapon);
+		void		setWeapon(Weapon *weapon);
+		Weapon		*getWeapon();
 
 	private:
 		std::string	_name;

@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:32:05 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/03/15 19:05:36 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/04 12:05:22 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int main()
 {
-    Harl    Harl;
+	Harl    Harl;
 
-    Harl.complain("debug");
-    Harl.complain("info");
-    Harl.complain("warning");
-    Harl.complain("error");
-    Harl.complain("test");
+	Harl.complain("debug");
+	Harl.complain("info");
+	Harl.complain("warning");
+	Harl.complain("error");
+	Harl.complain("test");
 
-    return (0);
+	return (0);
 }
