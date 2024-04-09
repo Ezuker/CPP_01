@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:32:05 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/04 12:03:12 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/09 16:47:20 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ int main(int argc, char **argv)
 	std::string s = argv[1];
 	Harl harl;
 
-	for (size_t i = 0; i < s.length(); i++)
-		s[i] = tolower(s[i]);
 	harl.complain(s);
 	return (0);
 }

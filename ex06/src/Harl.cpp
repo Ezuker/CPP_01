@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:32:03 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/04 12:04:48 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/09 16:47:16 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,10 @@ void	Harl::complain(std::string level)
 	pointer_functions[1] = &Harl::info;
 	pointer_functions[2] = &Harl::warning;
 	pointer_functions[3] = &Harl::error;
-	levels[0] = "debug";
-	levels[1] = "info";
-	levels[2] = "warning";
-	levels[3] = "error";
+	levels[0] = "DEBUG";
+	levels[1] = "INFO";
+	levels[2] = "WARNING";
+	levels[3] = "ERROR";
 	int i;
 	for (i = 0; i < 4; i++)
 	{

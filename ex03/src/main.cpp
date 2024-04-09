@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 20:39:54 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/04 12:00:11 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/09 16:43:57 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ int main()
 		jim.attack();
 		jim.setWeapon(NULL);
 		jim.attack();
-		std::cout << jim.getWeapon() << std::endl;
-		
 	}
 	return 0;
 }
