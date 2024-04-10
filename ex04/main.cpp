@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/04 12:01:20 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/10 16:29:45 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,8 @@ int	main (int argc, char *argv[])
 			}
 		}
 	}
-	ifsContent = ifsContentTransform(ifsContent, s1, s2);
+	if (ifsContent.length() > s1.length())
+		ifsContent = ifsContentTransform(ifsContent, s1, s2);
 	ofs << ifsContent;
 	return (0);
 }
