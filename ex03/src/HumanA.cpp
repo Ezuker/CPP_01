@@ -6,14 +6,14 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 20:41:23 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/04 11:53:09 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/11 11:09:06 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
 HumanA::HumanA(std::string name, Weapon &weapon) : _name(name), _weapon(weapon)
-{	
+{
 }
 
 HumanA::~HumanA()

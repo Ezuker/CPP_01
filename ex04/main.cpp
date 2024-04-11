@@ -6,14 +6,13 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/10 16:29:45 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/11 11:29:01 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <cstring>
 #include <string>
 #include <sstream>
 
@@ -45,9 +44,12 @@ int	main (int argc, char *argv[])
 		std::cerr << "Wrong number of args" << std::endl;
 		return (1);
 	}
+	std::string	s0;
 	std::string	s1;
 	std::string	s2;
 
+	s0 = argv[1];
+	s0 = s0 + ".replace";
 	s1 = argv[2];
 	s2 = argv[3];
 
@@ -57,13 +59,13 @@ int	main (int argc, char *argv[])
 		std::cerr << "Wrong path" << std::endl;
 		return (1);
 	}
-	std::ofstream	ofs(strcat(argv[1], ".replace"));
+	std::ofstream	ofs(s0.c_str());
 	if (!ofs)
 	{
 		std::cerr << "Can't create / access to outfile" << std::endl;
 		return (1);
 	}
-	
+
 	std::string	ifsContent;
 	if (ifs.is_open())
 	{
