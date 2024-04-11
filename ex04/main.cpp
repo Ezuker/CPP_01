@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/11 11:29:01 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/11 15:34:27 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ std::string	ifsContentTransform(std::string ifsContent, std::string needle, std:
 	size_t		pos;
 
 	pos = 0;
+	if (ifsContent.find(needle) == std::string::npos)
+		return (ifsContent);
 	newIfsContent += ifsContent.substr(0, ifsContent.find(needle));
 	newIfsContent += haystack;
 	pos += needle.length() + ifsContent.find(needle);
@@ -80,8 +82,7 @@ int	main (int argc, char *argv[])
 			}
 		}
 	}
-	if (ifsContent.length() > s1.length())
-		ifsContent = ifsContentTransform(ifsContent, s1, s2);
+	ifsContent = ifsContentTransform(ifsContent, s1, s2);
 	ofs << ifsContent;
 	return (0);
 }
