@@ -6,15 +6,12 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:27:29 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/11 15:34:27 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:17:00 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <iomanip>
 #include <fstream>
-#include <string>
-#include <sstream>
 
 std::string	ifsContentTransform(std::string ifsContent, std::string needle, std::string haystack)
 {
