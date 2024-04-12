@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 19:36:22 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/11 14:17:39 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:10:30 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ int main()
 
 	bob.announce();
 	Zombie *zombies = zombieHorde(N, "jim");
-	for (int i = 0; i < N; i++)
-		zombies[i].announce();
-	delete [] zombies;
+	if (zombies)
+	{
+		for (int i = 0; i < N; i++)
+			zombies[i].announce();
+		delete [] zombies;
+	}
 	return (0);
 }

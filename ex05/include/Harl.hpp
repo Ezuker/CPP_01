@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:32:00 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/10 16:32:30 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:06:32 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define HARL_HPP
 
 # include <iostream>
-# include <cstring>
 
 class Harl
 {

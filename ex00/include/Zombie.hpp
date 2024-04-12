@@ -6,7 +6,7 @@
 /*   By: bcarolle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 19:10:06 by bcarolle          #+#    #+#             */
-/*   Updated: 2024/04/02 22:29:59 by bcarolle         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:05:57 by bcarolle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ZOMBIE_H
 
 # include <iostream>
-# include <iomanip>
 
 class Zombie
 {
